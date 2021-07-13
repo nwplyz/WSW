@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[BigRoom] (
-    [id]               SMALLINT   NOT NULL,
+    [id]               SMALLINT   NOT NULL IDENTITY,
     [RoomNumber]       SMALLINT   NOT NULL,
     [Floor]            SMALLINT   NOT NULL,
     [MaxPerson]        SMALLINT   NOT NULL,
