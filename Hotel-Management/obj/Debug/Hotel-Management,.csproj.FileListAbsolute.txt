@@ -1,0 +1,11 @@
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\bin\Debug\Hotel-Management,.exe.config
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\bin\Debug\Hotel-Management,.exe
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\bin\Debug\Hotel-Management,.pdb
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel-Management,.csprojAssemblyReference.cache
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel_Management_.Form1.resources
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel_Management_.Properties.Resources.resources
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel-Management,.csproj.GenerateResource.cache
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel-Management,.csproj.CoreCompileInputs.cache
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel-Management,.exe
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel-Management,.pdb
+C:\Users\Marco\iCloudDrive\Schule\AE\Standart\Hotel-Management,\obj\Debug\Hotel_Management_.frmAllRooms.resources
