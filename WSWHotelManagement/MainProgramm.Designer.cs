@@ -74,7 +74,7 @@ namespace WSWHotelManagement
             this.pnlNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNav.Location = new System.Drawing.Point(0, 0);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(282, 819);
+            this.pnlNav.Size = new System.Drawing.Size(282, 880);
             this.pnlNav.TabIndex = 0;
             // 
             // panel1
@@ -183,7 +183,7 @@ namespace WSWHotelManagement
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(0, 771);
+            this.btnSettings.Location = new System.Drawing.Point(0, 832);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(282, 48);
             this.btnSettings.TabIndex = 5;
@@ -230,7 +230,7 @@ namespace WSWHotelManagement
             // pbSettings
             // 
             this.pbSettings.BackColor = System.Drawing.Color.White;
-            this.pbSettings.Location = new System.Drawing.Point(3, 771);
+            this.pbSettings.Location = new System.Drawing.Point(0, 832);
             this.pbSettings.Name = "pbSettings";
             this.pbSettings.Size = new System.Drawing.Size(3, 48);
             this.pbSettings.TabIndex = 9;
@@ -240,7 +240,7 @@ namespace WSWHotelManagement
             // 
             this.panel2.Location = new System.Drawing.Point(288, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1101, 795);
+            this.panel2.Size = new System.Drawing.Size(1216, 856);
             this.panel2.TabIndex = 1;
             // 
             // btnClose
@@ -248,7 +248,7 @@ namespace WSWHotelManagement
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1432, 0);
+            this.btnClose.Location = new System.Drawing.Point(1510, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(31, 31);
             this.btnClose.TabIndex = 6;
@@ -261,7 +261,7 @@ namespace WSWHotelManagement
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1462, 819);
+            this.ClientSize = new System.Drawing.Size(1541, 880);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlNav);

@@ -29,6 +29,11 @@ namespace WSWHotelManagement
         private void btnSettings_Click(object sender, EventArgs e)
         {
             pbSettings.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
