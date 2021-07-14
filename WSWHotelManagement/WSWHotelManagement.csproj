@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFE1C817-10B7-4B72-AEA1-9E6DA50B2234}</ProjectGuid>
+    <ProjectGuid>{F958BD62-9805-4448-A8CE-210108AD913F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Hotel_Management_</RootNamespace>
-    <AssemblyName>Hotel-Management,</AssemblyName>
+    <RootNamespace>WSWHotelManagement</RootNamespace>
+    <AssemblyName>WSWHotelManagement</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,27 +52,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAllRooms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAllRooms.Designer.cs">
-      <DependentUpon>frmAllRooms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HotelWSWDataSet.cs">
-      <DependentUpon>HotelWSWDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="HotelWSWDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HotelWSWDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WSWsecurity.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmAllRooms.resx">
-      <DependentUpon>frmAllRooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,17 +67,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="HotelWSWDataSet.xsc">
-      <DependentUpon>HotelWSWDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="HotelWSWDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>HotelWSWDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="HotelWSWDataSet.xss">
-      <DependentUpon>HotelWSWDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

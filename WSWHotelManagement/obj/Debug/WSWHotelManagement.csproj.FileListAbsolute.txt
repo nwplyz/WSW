@@ -1,0 +1,10 @@
+C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\WSWHotelManagement.exe.config
+C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\WSWHotelManagement.exe
+C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\WSWHotelManagement.pdb
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.AssemblyReference.cache
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.Form1.resources
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.Properties.Resources.resources
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.GenerateResource.cache
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.CoreCompileInputs.cache
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.exe
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.pdb

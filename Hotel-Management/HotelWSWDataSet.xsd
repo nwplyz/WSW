@@ -114,7 +114,7 @@ SELECT Id, Lastname, Firstname, [Date(arrival)], [Date(depature)] FROM Guest WHE
   <xs:element name="HotelWSWDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="HotelWSWDataSet" msprop:Generator_UserDSName="HotelWSWDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="BigRoom" msprop:Generator_TableClassName="BigRoomDataTable" msprop:Generator_TableVarName="tableBigRoom" msprop:Generator_TablePropName="BigRoom" msprop:Generator_RowDeletingName="BigRoomRowDeleting" msprop:Generator_RowChangingName="BigRoomRowChanging" msprop:Generator_RowEvHandlerName="BigRoomRowChangeEventHandler" msprop:Generator_RowDeletedName="BigRoomRowDeleted" msprop:Generator_UserTableName="BigRoom" msprop:Generator_RowChangedName="BigRoomRowChanged" msprop:Generator_RowEvArgName="BigRoomRowChangeEvent" msprop:Generator_RowClassName="BigRoomRow">
+        <xs:element name="BigRoom" msprop:Generator_TableClassName="BigRoomDataTable" msprop:Generator_TableVarName="tableBigRoom" msprop:Generator_RowChangedName="BigRoomRowChanged" msprop:Generator_TablePropName="BigRoom" msprop:Generator_RowDeletingName="BigRoomRowDeleting" msprop:Generator_RowChangingName="BigRoomRowChanging" msprop:Generator_RowEvHandlerName="BigRoomRowChangeEventHandler" msprop:Generator_RowDeletedName="BigRoomRowDeleted" msprop:Generator_RowClassName="BigRoomRow" msprop:Generator_UserTableName="BigRoom" msprop:Generator_RowEvArgName="BigRoomRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:short" />
@@ -140,7 +140,7 @@ SELECT Id, Lastname, Firstname, [Date(arrival)], [Date(depature)] FROM Guest WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Guest" msprop:Generator_TableClassName="GuestDataTable" msprop:Generator_TableVarName="tableGuest" msprop:Generator_TablePropName="Guest" msprop:Generator_RowDeletingName="GuestRowDeleting" msprop:Generator_RowChangingName="GuestRowChanging" msprop:Generator_RowEvHandlerName="GuestRowChangeEventHandler" msprop:Generator_RowDeletedName="GuestRowDeleted" msprop:Generator_UserTableName="Guest" msprop:Generator_RowChangedName="GuestRowChanged" msprop:Generator_RowEvArgName="GuestRowChangeEvent" msprop:Generator_RowClassName="GuestRow">
+        <xs:element name="Guest" msprop:Generator_TableClassName="GuestDataTable" msprop:Generator_TableVarName="tableGuest" msprop:Generator_RowChangedName="GuestRowChanged" msprop:Generator_TablePropName="Guest" msprop:Generator_RowDeletingName="GuestRowDeleting" msprop:Generator_RowChangingName="GuestRowChanging" msprop:Generator_RowEvHandlerName="GuestRowChangeEventHandler" msprop:Generator_RowDeletedName="GuestRowDeleted" msprop:Generator_RowClassName="GuestRow" msprop:Generator_UserTableName="Guest" msprop:Generator_RowEvArgName="GuestRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -166,6 +166,10 @@ SELECT Id, Lastname, Firstname, [Date(arrival)], [Date(depature)] FROM Guest WHE
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BigRoom" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="Guest_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Guest" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>

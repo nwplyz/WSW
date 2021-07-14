@@ -482,6 +482,13 @@ namespace Hotel_Management_ {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public BigRoomRow FindByid(short id) {
+                return ((BigRoomRow)(this.Rows.Find(new object[] {
+                            id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
                 BigRoomDataTable cln = ((BigRoomDataTable)(base.Clone()));
                 cln.InitVars();
@@ -528,11 +535,14 @@ namespace Hotel_Management_ {
                 base.Columns.Add(this.columnView);
                 this.columnSpecialEquipment = new global::System.Data.DataColumn("SpecialEquipment", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSpecialEquipment);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnid}, true));
                 this.columnid.AutoIncrement = true;
                 this.columnid.AutoIncrementSeed = -1;
                 this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.ReadOnly = true;
+                this.columnid.Unique = true;
                 this.columnRoomNumber.AllowDBNull = false;
                 this.columnFloor.AllowDBNull = false;
                 this.columnMaxPerson.AllowDBNull = false;
