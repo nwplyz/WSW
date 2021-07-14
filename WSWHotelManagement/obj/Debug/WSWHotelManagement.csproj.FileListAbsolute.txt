@@ -8,3 +8,4 @@ C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.GenerateRe
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.CoreCompileInputs.cache
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.exe
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.pdb
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.MainProgramm.resources

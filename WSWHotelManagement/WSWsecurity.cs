@@ -16,8 +16,7 @@ namespace WSWHotelManagement
                 UTF8Encoding utf8 = new UTF8Encoding();
                 byte[] data = sha1.ComputeHash(utf8.GetBytes(password));
                 return Convert.ToBase64String(data);
-
-              
+             
             }
         }
 

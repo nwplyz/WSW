@@ -34,12 +34,15 @@ namespace WSWHotelManagement
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (WSWsecurity.hashPassword(tbPassword.Text) == "86f7e437faa5a7fce15d1ddcb9eaeaea377667b8" && tbUsername.Text == "a")
+            if (WSWsecurity.hashPassword(tbPassword.Text) == "hvfkN/qlp/zhXR3cuerq6jd2Z7g=" && tbUsername.Text == "a")
             {
-                MessageBox.Show("done");
+               
+                MainProgramm mainProgramm = new MainProgramm(tbUsername.Text);
+                this.Hide();
+                mainProgramm.Show();
             }
             else {
-                MessageBox.Show("not done");
+                MessageBox.Show("username or password false");
             }
 
            

@@ -1,0 +1,11 @@
+C:\GitHub\WSW2\sha1Hash\bin\Release\sha1Hash.exe.config
+C:\GitHub\WSW2\sha1Hash\bin\Release\sha1Hash.exe
+C:\GitHub\WSW2\sha1Hash\bin\Release\sha1Hash.pdb
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.csproj.AssemblyReference.cache
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.csproj.CoreCompileInputs.cache
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.exe
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.pdb
+C:\GitHub\WSW2\sha1Hash\bin\Release\sha1Hash.exe.manifest
+C:\GitHub\WSW2\sha1Hash\bin\Release\sha1Hash.application
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.exe.manifest
+C:\GitHub\WSW2\sha1Hash\obj\Release\sha1Hash.application
