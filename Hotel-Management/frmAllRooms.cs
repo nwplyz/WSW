@@ -14,7 +14,7 @@ namespace Hotel_Management_
 {
     public partial class frmAllRooms : Form
     {   
-        SqlConnection sqlConnection;
+        SqlConnection sqlConnection ;
 
         public frmAllRooms()
         {
@@ -50,6 +50,7 @@ namespace Hotel_Management_
 
             }
 
+           
             Reader.Close();
             sqlConnection.Close();
 

@@ -1,7 +1,6 @@
 C:\GitHub\WSW2\Hotel-Management\bin\Debug\Hotel-Management,.exe.config
 C:\GitHub\WSW2\Hotel-Management\bin\Debug\Hotel-Management,.exe
 C:\GitHub\WSW2\Hotel-Management\bin\Debug\Hotel-Management,.pdb
-C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management.csprojAssemblyReference.cache
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel_Management_.Form1.resources
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel_Management_.frmAllRooms.resources
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel_Management_.Properties.Resources.resources
@@ -9,3 +8,4 @@ C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management.csproj.GenerateResour
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management.csproj.CoreCompileInputs.cache
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management,.exe
 C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management,.pdb
+C:\GitHub\WSW2\Hotel-Management\obj\Debug\Hotel-Management.csproj.AssemblyReference.cache
