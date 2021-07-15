@@ -9,3 +9,7 @@ C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.CoreCompil
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.exe
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.pdb
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.MainProgramm.resources
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.frmRooms.resources
+C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\PagedControl.dll
+C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\TabControl.dll
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.CopyComplete

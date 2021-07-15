@@ -79,13 +79,13 @@ namespace WSWHotelManagement
             this.pnlNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNav.Location = new System.Drawing.Point(0, 0);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(282, 880);
+            this.pnlNav.Size = new System.Drawing.Size(282, 837);
             this.pnlNav.TabIndex = 0;
             // 
             // pbSettings
             // 
             this.pbSettings.BackColor = System.Drawing.Color.White;
-            this.pbSettings.Location = new System.Drawing.Point(0, 832);
+            this.pbSettings.Location = new System.Drawing.Point(0, 789);
             this.pbSettings.Name = "pbSettings";
             this.pbSettings.Size = new System.Drawing.Size(3, 48);
             this.pbSettings.TabIndex = 9;
@@ -134,7 +134,7 @@ namespace WSWHotelManagement
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(0, 832);
+            this.btnSettings.Location = new System.Drawing.Point(0, 789);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(282, 48);
             this.btnSettings.TabIndex = 5;
@@ -249,7 +249,7 @@ namespace WSWHotelManagement
             // 
             this.pnlLoadForm.Location = new System.Drawing.Point(288, 12);
             this.pnlLoadForm.Name = "pnlLoadForm";
-            this.pnlLoadForm.Size = new System.Drawing.Size(1216, 856);
+            this.pnlLoadForm.Size = new System.Drawing.Size(1227, 779);
             this.pnlLoadForm.TabIndex = 1;
             // 
             // btnClose
@@ -278,6 +278,7 @@ namespace WSWHotelManagement
             this.btnRooms.TabIndex = 10;
             this.btnRooms.Text = "Rooms";
             this.btnRooms.UseVisualStyleBackColor = true;
+            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
             // pbRooms
             // 
@@ -293,7 +294,7 @@ namespace WSWHotelManagement
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1541, 880);
+            this.ClientSize = new System.Drawing.Size(1541, 837);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pnlLoadForm);
             this.Controls.Add(this.pnlNav);
