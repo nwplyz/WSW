@@ -18,7 +18,10 @@ namespace WSWHotelManagement
             InitializeComponent();
             lblUser.Text = userName;
             pbSettings.Visible = false;
-
+            pbCheckIn.Visible = false;
+            pbCheckOut.Visible = false;
+            pbCustomer.Visible = false;
+            pbEmployee.Visible = false;
         }
 
         private void MainProgramm_Load(object sender, EventArgs e)
@@ -29,16 +32,52 @@ namespace WSWHotelManagement
         private void btnSettings_Click(object sender, EventArgs e)
         {
             pbSettings.Visible = true;
-            pictureBox2.Visible = false;
-            pictureBox3.Visible = false;
-            pictureBox4.Visible = false;
-            pictureBox5.Visible = false;
+            pbCheckIn.Visible = false;
+            pbCheckOut.Visible = false;
+            pbCustomer.Visible = false;
+            pbEmployee.Visible = false;
 
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCheckIn_Click(object sender, EventArgs e)
+        {
+            pbSettings.Visible = false;
+            pbCheckIn.Visible = true;
+            pbCheckOut.Visible = false;
+            pbCustomer.Visible = false;
+            pbEmployee.Visible = false;
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            pbSettings.Visible = false;
+            pbCheckIn.Visible = false;
+            pbCheckOut.Visible = true;
+            pbCustomer.Visible = false;
+            pbEmployee.Visible = false;
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            pbSettings.Visible = false;
+            pbCheckIn.Visible = false;
+            pbCheckOut.Visible = false;
+            pbCustomer.Visible = true;
+            pbEmployee.Visible = false;
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            pbSettings.Visible = false;
+            pbCheckIn.Visible = false;
+            pbCheckOut.Visible = false;
+            pbCustomer.Visible = false;
+            pbEmployee.Visible = true;
         }
     }
 }
