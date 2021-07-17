@@ -122,7 +122,7 @@ namespace WSWHotelManagement
             }
         }
 
-        private void btnRooms_Click(object sender, EventArgs e)
+        public void btnRooms_Click(object sender, EventArgs e)
         {
             if (currentForm != "Rooms")
             {

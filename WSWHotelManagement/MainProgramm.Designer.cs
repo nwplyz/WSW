@@ -31,6 +31,8 @@ namespace WSWHotelManagement
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainProgramm));
             this.pnlNav = new System.Windows.Forms.Panel();
+            this.pbRooms = new System.Windows.Forms.PictureBox();
+            this.btnRooms = new System.Windows.Forms.Button();
             this.pbSettings = new System.Windows.Forms.PictureBox();
             this.pbEmployee = new System.Windows.Forms.PictureBox();
             this.pbCustomer = new System.Windows.Forms.PictureBox();
@@ -47,9 +49,8 @@ namespace WSWHotelManagement
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlLoadForm = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnRooms = new System.Windows.Forms.Button();
-            this.pbRooms = new System.Windows.Forms.PictureBox();
             this.pnlNav.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomer)).BeginInit();
@@ -57,7 +58,6 @@ namespace WSWHotelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pbCheckIn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRooms)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlNav
@@ -81,6 +81,30 @@ namespace WSWHotelManagement
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(282, 837);
             this.pnlNav.TabIndex = 0;
+            // 
+            // pbRooms
+            // 
+            this.pbRooms.BackColor = System.Drawing.Color.White;
+            this.pbRooms.Location = new System.Drawing.Point(0, 396);
+            this.pbRooms.Name = "pbRooms";
+            this.pbRooms.Size = new System.Drawing.Size(3, 48);
+            this.pbRooms.TabIndex = 11;
+            this.pbRooms.TabStop = false;
+            // 
+            // btnRooms
+            // 
+            this.btnRooms.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRooms.FlatAppearance.BorderSize = 0;
+            this.btnRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRooms.ForeColor = System.Drawing.Color.White;
+            this.btnRooms.Location = new System.Drawing.Point(0, 396);
+            this.btnRooms.Name = "btnRooms";
+            this.btnRooms.Size = new System.Drawing.Size(282, 48);
+            this.btnRooms.TabIndex = 10;
+            this.btnRooms.Text = "Rooms";
+            this.btnRooms.UseVisualStyleBackColor = true;
+            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
             // pbSettings
             // 
@@ -265,30 +289,6 @@ namespace WSWHotelManagement
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // btnRooms
-            // 
-            this.btnRooms.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRooms.FlatAppearance.BorderSize = 0;
-            this.btnRooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRooms.ForeColor = System.Drawing.Color.White;
-            this.btnRooms.Location = new System.Drawing.Point(0, 396);
-            this.btnRooms.Name = "btnRooms";
-            this.btnRooms.Size = new System.Drawing.Size(282, 48);
-            this.btnRooms.TabIndex = 10;
-            this.btnRooms.Text = "Rooms";
-            this.btnRooms.UseVisualStyleBackColor = true;
-            this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
-            // 
-            // pbRooms
-            // 
-            this.pbRooms.BackColor = System.Drawing.Color.White;
-            this.pbRooms.Location = new System.Drawing.Point(0, 396);
-            this.pbRooms.Name = "pbRooms";
-            this.pbRooms.Size = new System.Drawing.Size(3, 48);
-            this.pbRooms.TabIndex = 11;
-            this.pbRooms.TabStop = false;
-            // 
             // MainProgramm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +304,7 @@ namespace WSWHotelManagement
             this.Text = "MainProgramm";
             this.Load += new System.EventHandler(this.MainProgramm_Load);
             this.pnlNav.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmployee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCustomer)).EndInit();
@@ -312,7 +313,6 @@ namespace WSWHotelManagement
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRooms)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,9 +334,9 @@ namespace WSWHotelManagement
         private System.Windows.Forms.PictureBox pbCustomer;
         private System.Windows.Forms.PictureBox pbCheckOut;
         private System.Windows.Forms.PictureBox pbCheckIn;
-        private System.Windows.Forms.Panel pnlLoadForm;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pbRooms;
         private System.Windows.Forms.Button btnRooms;
+        private System.Windows.Forms.Panel pnlLoadForm;
     }
 }

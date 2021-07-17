@@ -64,6 +64,7 @@
     <Compile Include="frmRooms.Designer.cs">
       <DependentUpon>frmRooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="funDB.cs" />
     <Compile Include="MainProgramm.cs">
       <SubType>Form</SubType>
     </Compile>

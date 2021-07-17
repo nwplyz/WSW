@@ -29,7 +29,7 @@ namespace WSWHotelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGVrooms = new System.Windows.Forms.DataGridView();
             this.tbRoomNumber = new System.Windows.Forms.TextBox();
             this.lblRoomNumber = new System.Windows.Forms.Label();
             this.lblBed = new System.Windows.Forms.Label();
@@ -42,17 +42,34 @@ namespace WSWHotelManagement
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblRoomClass = new System.Windows.Forms.Label();
+            this.tbRoomClass = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVrooms)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DGVrooms
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(326, 168);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(889, 599);
-            this.dataGridView1.TabIndex = 0;
+            this.DGVrooms.AllowUserToAddRows = false;
+            this.DGVrooms.AllowUserToDeleteRows = false;
+            this.DGVrooms.AllowUserToResizeColumns = false;
+            this.DGVrooms.AllowUserToResizeRows = false;
+            this.DGVrooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVrooms.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DGVrooms.BackgroundColor = System.Drawing.Color.White;
+            this.DGVrooms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DGVrooms.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DGVrooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVrooms.ColumnHeadersVisible = false;
+            this.DGVrooms.GridColor = System.Drawing.Color.DimGray;
+            this.DGVrooms.Location = new System.Drawing.Point(333, 168);
+            this.DGVrooms.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.DGVrooms.Name = "DGVrooms";
+            this.DGVrooms.ReadOnly = true;
+            this.DGVrooms.RowHeadersVisible = false;
+            this.DGVrooms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DGVrooms.Size = new System.Drawing.Size(882, 599);
+            this.DGVrooms.TabIndex = 0;
             // 
             // tbRoomNumber
             // 
@@ -77,7 +94,7 @@ namespace WSWHotelManagement
             // 
             this.lblBed.AutoSize = true;
             this.lblBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBed.Location = new System.Drawing.Point(19, 265);
+            this.lblBed.Location = new System.Drawing.Point(20, 331);
             this.lblBed.Margin = new System.Windows.Forms.Padding(10);
             this.lblBed.Name = "lblBed";
             this.lblBed.Size = new System.Drawing.Size(57, 29);
@@ -88,7 +105,7 @@ namespace WSWHotelManagement
             // 
             this.lblExtraBed.AutoSize = true;
             this.lblExtraBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtraBed.Location = new System.Drawing.Point(19, 357);
+            this.lblExtraBed.Location = new System.Drawing.Point(20, 423);
             this.lblExtraBed.Name = "lblExtraBed";
             this.lblExtraBed.Size = new System.Drawing.Size(221, 29);
             this.lblExtraBed.TabIndex = 6;
@@ -98,7 +115,7 @@ namespace WSWHotelManagement
             // 
             this.lblDefaultPrice.AutoSize = true;
             this.lblDefaultPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDefaultPrice.Location = new System.Drawing.Point(20, 452);
+            this.lblDefaultPrice.Location = new System.Drawing.Point(21, 518);
             this.lblDefaultPrice.Name = "lblDefaultPrice";
             this.lblDefaultPrice.Size = new System.Drawing.Size(142, 29);
             this.lblDefaultPrice.TabIndex = 8;
@@ -107,7 +124,7 @@ namespace WSWHotelManagement
             // tbDefaultPrice
             // 
             this.tbDefaultPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDefaultPrice.Location = new System.Drawing.Point(25, 485);
+            this.tbDefaultPrice.Location = new System.Drawing.Point(26, 551);
             this.tbDefaultPrice.Margin = new System.Windows.Forms.Padding(10, 4, 10, 10);
             this.tbDefaultPrice.Name = "tbDefaultPrice";
             this.tbDefaultPrice.Size = new System.Drawing.Size(294, 34);
@@ -138,7 +155,7 @@ namespace WSWHotelManagement
             "8",
             "9",
             "10"});
-            this.cbBed.Location = new System.Drawing.Point(24, 299);
+            this.cbBed.Location = new System.Drawing.Point(25, 365);
             this.cbBed.Margin = new System.Windows.Forms.Padding(10, 4, 10, 10);
             this.cbBed.Name = "cbBed";
             this.cbBed.Size = new System.Drawing.Size(295, 33);
@@ -153,7 +170,7 @@ namespace WSWHotelManagement
             "1",
             "2",
             "3"});
-            this.cbExtraBed.Location = new System.Drawing.Point(24, 390);
+            this.cbExtraBed.Location = new System.Drawing.Point(25, 456);
             this.cbExtraBed.Margin = new System.Windows.Forms.Padding(10, 4, 10, 10);
             this.cbExtraBed.Name = "cbExtraBed";
             this.cbExtraBed.Size = new System.Drawing.Size(295, 33);
@@ -164,19 +181,20 @@ namespace WSWHotelManagement
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(24, 559);
+            this.btnAdd.Location = new System.Drawing.Point(25, 625);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(295, 36);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(25, 601);
+            this.btnUpdate.Location = new System.Drawing.Point(26, 667);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(295, 36);
             this.btnUpdate.TabIndex = 13;
@@ -188,12 +206,40 @@ namespace WSWHotelManagement
             this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(25, 643);
+            this.btnDelete.Location = new System.Drawing.Point(26, 709);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(295, 36);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // lblRoomClass
+            // 
+            this.lblRoomClass.AutoSize = true;
+            this.lblRoomClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomClass.Location = new System.Drawing.Point(20, 245);
+            this.lblRoomClass.Name = "lblRoomClass";
+            this.lblRoomClass.Size = new System.Drawing.Size(144, 29);
+            this.lblRoomClass.TabIndex = 16;
+            this.lblRoomClass.Text = "Room Class";
+            // 
+            // tbRoomClass
+            // 
+            this.tbRoomClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRoomClass.Location = new System.Drawing.Point(25, 278);
+            this.tbRoomClass.Margin = new System.Windows.Forms.Padding(10, 4, 10, 10);
+            this.tbRoomClass.Name = "tbRoomClass";
+            this.tbRoomClass.Size = new System.Drawing.Size(294, 34);
+            this.tbRoomClass.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(92)))), ((int)(((byte)(153)))));
+            this.panel1.Location = new System.Drawing.Point(333, 128);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(882, 40);
+            this.panel1.TabIndex = 17;
             // 
             // frmRooms
             // 
@@ -201,6 +247,9 @@ namespace WSWHotelManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1227, 779);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblRoomClass);
+            this.Controls.Add(this.tbRoomClass);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
@@ -213,11 +262,12 @@ namespace WSWHotelManagement
             this.Controls.Add(this.lblBed);
             this.Controls.Add(this.lblRoomNumber);
             this.Controls.Add(this.tbRoomNumber);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DGVrooms);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRooms";
             this.Text = "frmRooms";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmRooms_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVrooms)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +275,7 @@ namespace WSWHotelManagement
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGVrooms;
         private System.Windows.Forms.TextBox tbRoomNumber;
         private System.Windows.Forms.Label lblRoomNumber;
         private System.Windows.Forms.Label lblBed;
@@ -238,5 +288,8 @@ namespace WSWHotelManagement
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label lblRoomClass;
+        private System.Windows.Forms.TextBox tbRoomClass;
+        private System.Windows.Forms.Panel panel1;
     }
 }
