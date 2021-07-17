@@ -44,7 +44,6 @@ namespace WSWHotelManagement
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblRoomClass = new System.Windows.Forms.Label();
             this.tbRoomClass = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.DGVrooms)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,14 +59,15 @@ namespace WSWHotelManagement
             this.DGVrooms.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DGVrooms.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.DGVrooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVrooms.ColumnHeadersVisible = false;
             this.DGVrooms.GridColor = System.Drawing.Color.DimGray;
             this.DGVrooms.Location = new System.Drawing.Point(333, 168);
             this.DGVrooms.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.DGVrooms.Name = "DGVrooms";
             this.DGVrooms.ReadOnly = true;
             this.DGVrooms.RowHeadersVisible = false;
-            this.DGVrooms.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DGVrooms.ShowCellToolTips = false;
+            this.DGVrooms.ShowEditingIcon = false;
+            this.DGVrooms.ShowRowErrors = false;
             this.DGVrooms.Size = new System.Drawing.Size(882, 599);
             this.DGVrooms.TabIndex = 0;
             // 
@@ -232,22 +232,12 @@ namespace WSWHotelManagement
             this.tbRoomClass.Size = new System.Drawing.Size(294, 34);
             this.tbRoomClass.TabIndex = 15;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(92)))), ((int)(((byte)(153)))));
-            this.panel1.Location = new System.Drawing.Point(333, 128);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(882, 40);
-            this.panel1.TabIndex = 17;
-            // 
             // frmRooms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1227, 779);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblRoomClass);
             this.Controls.Add(this.tbRoomClass);
             this.Controls.Add(this.btnDelete);
@@ -290,6 +280,5 @@ namespace WSWHotelManagement
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lblRoomClass;
         private System.Windows.Forms.TextBox tbRoomClass;
-        private System.Windows.Forms.Panel panel1;
     }
 }

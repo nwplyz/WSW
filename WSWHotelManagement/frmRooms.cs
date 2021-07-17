@@ -43,7 +43,7 @@ namespace WSWHotelManagement
                 fn.setData(query,"Room has been added");
 
 
-                frmRooms_Load(sender, e);
+                frmRooms_Load(this, null);
             }
             else
             {

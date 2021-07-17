@@ -68,7 +68,13 @@ namespace WSWHotelManagement
                 pbEmployee.Visible = false;
                 pbRooms.Visible = false;
 
-               
+                frmCheckIn frmCheckIn_Vrb = new frmCheckIn() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                frmCheckIn_Vrb.FormBorderStyle = FormBorderStyle.None;
+                this.pnlLoadForm.Controls.Clear();
+                this.pnlLoadForm.Controls.Add(frmCheckIn_Vrb);
+                frmCheckIn_Vrb.Show();
+
+
             }
         }
 
