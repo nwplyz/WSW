@@ -52,12 +52,12 @@ namespace WSWHotelManagement
             this.lblBed = new System.Windows.Forms.Label();
             this.cbExtraBed = new System.Windows.Forms.ComboBox();
             this.lblExtraBed = new System.Windows.Forms.Label();
-            this.cbRoomClass = new System.Windows.Forms.ComboBox();
-            this.lblRoomClass = new System.Windows.Forms.Label();
             this.cbRoomNumber = new System.Windows.Forms.ComboBox();
             this.lblRoomNumber = new System.Windows.Forms.Label();
             this.btnCheckIn = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.lblMobilenumber = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbFirstname
@@ -158,7 +158,7 @@ namespace WSWHotelManagement
             // 
             this.chbPassport.AutoSize = true;
             this.chbPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbPassport.Location = new System.Drawing.Point(440, 466);
+            this.chbPassport.Location = new System.Drawing.Point(440, 545);
             this.chbPassport.Name = "chbPassport";
             this.chbPassport.Size = new System.Drawing.Size(241, 33);
             this.chbPassport.TabIndex = 27;
@@ -240,7 +240,7 @@ namespace WSWHotelManagement
             // 
             this.lblCheckInDate.AutoSize = true;
             this.lblCheckInDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckInDate.Location = new System.Drawing.Point(435, 513);
+            this.lblCheckInDate.Location = new System.Drawing.Point(860, 188);
             this.lblCheckInDate.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.lblCheckInDate.Name = "lblCheckInDate";
             this.lblCheckInDate.Size = new System.Drawing.Size(162, 29);
@@ -251,7 +251,7 @@ namespace WSWHotelManagement
             // 
             this.dtpCheckInDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCheckInDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCheckInDate.Location = new System.Drawing.Point(440, 545);
+            this.dtpCheckInDate.Location = new System.Drawing.Point(865, 220);
             this.dtpCheckInDate.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dtpCheckInDate.MinDate = new System.DateTime(1880, 1, 1, 0, 0, 0, 0);
             this.dtpCheckInDate.Name = "dtpCheckInDate";
@@ -263,9 +263,16 @@ namespace WSWHotelManagement
             this.cbBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBed.FormattingEnabled = true;
             this.cbBed.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cbBed.Location = new System.Drawing.Point(865, 220);
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
+            this.cbBed.Location = new System.Drawing.Point(865, 300);
             this.cbBed.Margin = new System.Windows.Forms.Padding(120, 3, 3, 3);
             this.cbBed.Name = "cbBed";
             this.cbBed.Size = new System.Drawing.Size(295, 33);
@@ -275,7 +282,7 @@ namespace WSWHotelManagement
             // 
             this.lblBed.AutoSize = true;
             this.lblBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBed.Location = new System.Drawing.Point(860, 188);
+            this.lblBed.Location = new System.Drawing.Point(860, 268);
             this.lblBed.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.lblBed.Name = "lblBed";
             this.lblBed.Size = new System.Drawing.Size(57, 29);
@@ -287,9 +294,10 @@ namespace WSWHotelManagement
             this.cbExtraBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbExtraBed.FormattingEnabled = true;
             this.cbExtraBed.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cbExtraBed.Location = new System.Drawing.Point(865, 300);
+            "1",
+            "2",
+            "3"});
+            this.cbExtraBed.Location = new System.Drawing.Point(865, 380);
             this.cbExtraBed.Margin = new System.Windows.Forms.Padding(120, 3, 3, 3);
             this.cbExtraBed.Name = "cbExtraBed";
             this.cbExtraBed.Size = new System.Drawing.Size(295, 33);
@@ -299,36 +307,12 @@ namespace WSWHotelManagement
             // 
             this.lblExtraBed.AutoSize = true;
             this.lblExtraBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtraBed.Location = new System.Drawing.Point(860, 268);
+            this.lblExtraBed.Location = new System.Drawing.Point(860, 348);
             this.lblExtraBed.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.lblExtraBed.Name = "lblExtraBed";
             this.lblExtraBed.Size = new System.Drawing.Size(117, 29);
             this.lblExtraBed.TabIndex = 39;
             this.lblExtraBed.Text = "Extra Bed";
-            // 
-            // cbRoomClass
-            // 
-            this.cbRoomClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRoomClass.FormattingEnabled = true;
-            this.cbRoomClass.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.cbRoomClass.Location = new System.Drawing.Point(865, 380);
-            this.cbRoomClass.Margin = new System.Windows.Forms.Padding(120, 3, 3, 3);
-            this.cbRoomClass.Name = "cbRoomClass";
-            this.cbRoomClass.Size = new System.Drawing.Size(295, 33);
-            this.cbRoomClass.TabIndex = 42;
-            // 
-            // lblRoomClass
-            // 
-            this.lblRoomClass.AutoSize = true;
-            this.lblRoomClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomClass.Location = new System.Drawing.Point(860, 348);
-            this.lblRoomClass.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.lblRoomClass.Name = "lblRoomClass";
-            this.lblRoomClass.Size = new System.Drawing.Size(144, 29);
-            this.lblRoomClass.TabIndex = 41;
-            this.lblRoomClass.Text = "Room Class";
             // 
             // cbRoomNumber
             // 
@@ -358,10 +342,10 @@ namespace WSWHotelManagement
             // 
             this.btnCheckIn.BackColor = System.Drawing.Color.White;
             this.btnCheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckIn.Location = new System.Drawing.Point(865, 546);
+            this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckIn.Location = new System.Drawing.Point(865, 543);
             this.btnCheckIn.Name = "btnCheckIn";
-            this.btnCheckIn.Size = new System.Drawing.Size(295, 36);
+            this.btnCheckIn.Size = new System.Drawing.Size(294, 34);
             this.btnCheckIn.TabIndex = 45;
             this.btnCheckIn.Text = "Check In";
             this.btnCheckIn.UseVisualStyleBackColor = false;
@@ -376,18 +360,38 @@ namespace WSWHotelManagement
             this.lblTitle.TabIndex = 46;
             this.lblTitle.Text = "Check In";
             // 
+            // lblMobilenumber
+            // 
+            this.lblMobilenumber.AutoSize = true;
+            this.lblMobilenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobilenumber.Location = new System.Drawing.Point(435, 433);
+            this.lblMobilenumber.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.lblMobilenumber.Name = "lblMobilenumber";
+            this.lblMobilenumber.Size = new System.Drawing.Size(169, 29);
+            this.lblMobilenumber.TabIndex = 48;
+            this.lblMobilenumber.Text = "Mobilenumber";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(440, 465);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(10, 4, 10, 10);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(294, 34);
+            this.textBox2.TabIndex = 47;
+            // 
             // frmCheckIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1227, 779);
+            this.Controls.Add(this.lblMobilenumber);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.cbRoomNumber);
             this.Controls.Add(this.lblRoomNumber);
-            this.Controls.Add(this.cbRoomClass);
-            this.Controls.Add(this.lblRoomClass);
             this.Controls.Add(this.cbExtraBed);
             this.Controls.Add(this.lblExtraBed);
             this.Controls.Add(this.cbBed);
@@ -444,11 +448,11 @@ namespace WSWHotelManagement
         private System.Windows.Forms.Label lblBed;
         private System.Windows.Forms.ComboBox cbExtraBed;
         private System.Windows.Forms.Label lblExtraBed;
-        private System.Windows.Forms.ComboBox cbRoomClass;
-        private System.Windows.Forms.Label lblRoomClass;
         private System.Windows.Forms.ComboBox cbRoomNumber;
         private System.Windows.Forms.Label lblRoomNumber;
         private System.Windows.Forms.Button btnCheckIn;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblMobilenumber;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

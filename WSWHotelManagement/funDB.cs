@@ -20,9 +20,9 @@ namespace WSWHotelManagement
 
         public DataSet getData(string query)
         {
-            SqlConnection sqlcon = getConnection();
+            SqlConnection sqlConnection = getConnection();
             SqlCommand cmd = new SqlCommand();
-            cmd.Connection = sqlcon;
+            cmd.Connection = sqlConnection;
             cmd.CommandText = query;
             SqlDataAdapter dAdapter = new SqlDataAdapter(cmd);
             DataSet dSet = new DataSet();
@@ -41,6 +41,19 @@ namespace WSWHotelManagement
             sqlcon.Close();
 
             MessageBox.Show("'" + message + "'","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        public SqlDataReader getComboData(string query) {
+
+            SqlConnection sqlConnection = getConnection();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlConnection;
+            sqlConnection.Open();
+            cmd = new SqlCommand(query, sqlConnection);
+            SqlDataReader sqlDataReader = cmd.ExecuteReader();
+            
+
+            return sqlDataReader;
         }
     }
 }
