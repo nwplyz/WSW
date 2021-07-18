@@ -27,6 +27,7 @@ namespace WSWHotelManagement
             query = "select * from rooms";
             DataSet dataSet = fn.getData(query);
             DGVrooms.DataSource = dataSet.Tables[0];
+            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

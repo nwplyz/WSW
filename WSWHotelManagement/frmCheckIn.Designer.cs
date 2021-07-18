@@ -294,6 +294,7 @@ namespace WSWHotelManagement
             this.cbExtraBed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbExtraBed.FormattingEnabled = true;
             this.cbExtraBed.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3"});
@@ -318,14 +319,12 @@ namespace WSWHotelManagement
             // 
             this.cbRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRoomNumber.FormattingEnabled = true;
-            this.cbRoomNumber.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
             this.cbRoomNumber.Location = new System.Drawing.Point(865, 465);
             this.cbRoomNumber.Margin = new System.Windows.Forms.Padding(120, 3, 3, 3);
             this.cbRoomNumber.Name = "cbRoomNumber";
             this.cbRoomNumber.Size = new System.Drawing.Size(295, 33);
             this.cbRoomNumber.TabIndex = 44;
+            this.cbRoomNumber.Click += new System.EventHandler(this.cbRoomNumber_Click);
             // 
             // lblRoomNumber
             // 
@@ -349,6 +348,7 @@ namespace WSWHotelManagement
             this.btnCheckIn.TabIndex = 45;
             this.btnCheckIn.Text = "Check In";
             this.btnCheckIn.UseVisualStyleBackColor = false;
+            this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // lblTitle
             // 
