@@ -73,6 +73,7 @@ namespace WSWHotelManagement
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(252, 29);
             this.tbPassword.TabIndex = 2;
+            this.tbPassword.Text = "a";
             this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbUsername
@@ -82,6 +83,7 @@ namespace WSWHotelManagement
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(252, 29);
             this.tbUsername.TabIndex = 3;
+            this.tbUsername.Text = "a";
             // 
             // panel1
             // 
