@@ -14,3 +14,4 @@ C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\PagedControl.dll
 C:\GitHub\WSW2\WSWHotelManagement\bin\Debug\TabControl.dll
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.csproj.CopyComplete
 C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.frmCheckIn.resources
+C:\GitHub\WSW2\WSWHotelManagement\obj\Debug\WSWHotelManagement.frmCheckOut.resources

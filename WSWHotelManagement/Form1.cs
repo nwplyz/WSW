@@ -43,10 +43,7 @@ namespace WSWHotelManagement
             }
             else {
                 MessageBox.Show("username or password false");
-            }
-
-            
-
+            }          
         }
     }
 }

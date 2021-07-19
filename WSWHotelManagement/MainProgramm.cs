@@ -91,6 +91,14 @@ namespace WSWHotelManagement
                 pbCustomer.Visible = false;
                 pbEmployee.Visible = false;
                 pbRooms.Visible = false;
+
+
+                frmCheckOut frmCheckOut_Vrb = new frmCheckOut() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                frmCheckOut_Vrb.FormBorderStyle = FormBorderStyle.None;
+                this.pnlLoadForm.Controls.Clear();
+                this.pnlLoadForm.Controls.Add(frmCheckOut_Vrb);
+                frmCheckOut_Vrb.Show();
+
             }
         }
 
