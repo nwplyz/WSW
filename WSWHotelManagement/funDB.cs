@@ -40,7 +40,7 @@ namespace WSWHotelManagement
             cmd.ExecuteNonQuery();
             sqlcon.Close();
 
-            MessageBox.Show("'" + message + "'","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show(message);
         }
 
         public SqlDataReader getComboData(string query) {

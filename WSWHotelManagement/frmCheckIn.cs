@@ -53,7 +53,7 @@ namespace WSWHotelManagement
             }
             
         }
-
+int roid;
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
             if (chbPassport.Checked)
@@ -68,15 +68,16 @@ namespace WSWHotelManagement
                     string city = tbCity.Text;
                     string country = tbCountry.Text;
                     string language = tbLanguage.Text;
-                    string mobilen = tbMobile.Text;
-                    string price = tbPrice.Text;
+                    string mobilen = tbMobile.Text;                   
                     string mStreetNum = tbStreetNumber.Text;
                     string gender = cbGender.Text;
                     string dob = dtpDateOfBirth.Value.ToString();
+                    string checkInDate = dtpCheckInDate.Value.ToString();
 
-                    query = "insert into customer (Firstname,Lastname,Mobilenumber,Gender,sLanguage,DateOfBirth,Country,City,StreetNumber,CheckInDat,eCheckOutDate,CheckedOut,roomid) values" +
-                        "('"+ firstname + "','" + lastname + "','" + city + "','" + country + "','" + language + "','" + mobilen + "','" + price + "','" + mStreetNum + "','" + gender + "','" + dob + "',)";
-                }//////////////////////////////
+                      query = "insert into customer (Firstname,Lastname,Mobilenumber,Gender,sLanguage,DateOfBirth,Country,City,StreetNumber,CheckInDate,roomid,CheckOutDate) values ('" + firstname + "','" + lastname + "','" + mobilen + "','" + gender + "','" + language + "','" + dob  + "','" + country + "','" + city + "','" + mStreetNum + "','" + checkInDate + "','" + roid + "','-') update rooms set Available = 'No' where RoomNumber = '" + cbRoomNumber.Text+"'";
+
+                    fun.setData(query, "Room " + cbRoomNumber.Text + " is booked now");
+                }
                 else
                 {
                     MessageBox.Show("Fill all fields");
@@ -87,13 +88,30 @@ namespace WSWHotelManagement
                 MessageBox.Show("Please check customers passport");
             }
         }
-int roid;
+          
         private void cbRoomNumber_SelectedIndexChanged(object sender, EventArgs e)
         {
             query = "select Price,RoomID from rooms where RoomNumber = '"+cbRoomNumber.Text+"' ";
             DataSet dataSet = fun.getData(query);
             tbPrice.Text = dataSet.Tables[0].Rows[0][0].ToString();
             roid = int.Parse(dataSet.Tables[0].Rows[0][1].ToString());
+
+        }
+
+        private void clear()
+        {
+            tbFirstname.Clear();
+            tbLastname.Clear();
+            tbCity.Clear();
+            tbCountry.Clear();
+            tbLanguage.Clear();
+            tbMobile.Clear();
+            tbPrice.Clear();
+            tbStreetNumber.Clear();
+            cbGender.SelectedIndex = -1;
+            cbBed.SelectedIndex = -1;
+            cbExtraBed.SelectedIndex = -1;
+            cbRoomNumber.SelectedIndex = -1;
 
         }
     }
