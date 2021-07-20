@@ -22,5 +22,6 @@ namespace WSWInventoryManagement
         {
             pbLogo.Image = Image.FromFile("logo_large.png");
         }
+
     }
 }
