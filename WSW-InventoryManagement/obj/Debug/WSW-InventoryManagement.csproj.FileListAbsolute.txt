@@ -1,0 +1,11 @@
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\bin\Debug\WSW-InventoryManagement.exe.config
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\bin\Debug\WSW-InventoryManagement.exe
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\bin\Debug\WSW-InventoryManagement.pdb
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW-InventoryManagement.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW_InventoryManagement.Form1.resources
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW_InventoryManagement.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW-InventoryManagement.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW-InventoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW-InventoryManagement.exe
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW-InventoryManagement.pdb
+C:\Users\User\Documents\GitHub\WSW\WSW-InventoryManagement\obj\Debug\WSW_InventoryManagement.frmMainProgram.resources
